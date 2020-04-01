@@ -1,15 +1,16 @@
 ## Author: Jessy Li (ljunyi@seas.upenn.edu)
 
 import argparse
-import liblinearutil as ll
 
 import utils
 import sys
 from features import Space
 from generatefeatures import ModelNewText
 
-# RT = "./"
-RT = "/nlp/users/ljunyi/projects/speciteller/"
+sys.path.append('./liblinear/python')
+import liblinearutil as ll
+RT = "./"
+#RT = "/nlp/users/ljunyi/projects/speciteller/"
 
 BRNCLSTSPACEFILE = RT+"cotraining_models/brnclst1gram.space"
 SHALLOWSCALEFILE = RT+"cotraining_models/shallow.scale"
